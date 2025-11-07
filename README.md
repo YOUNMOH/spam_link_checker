@@ -46,7 +46,6 @@ A professional web application that analyzes URLs to detect spam, phishing, and 
 
 
 
-\## 🏗️ Architecture
 
 
 
