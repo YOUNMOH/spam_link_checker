@@ -1,0 +1,145 @@
+/* Custom Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+}
+
+.url-display {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-left: 4px solid #0ca0c2;
+}
+
+.metric-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.metric-card.safe {
+    background: linear-gradient(135deg, #56ab2f 0%, #a8e6cf 100%);
+}
+
+.metric-card.warning {
+    background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+}
+
+.metric-card.danger {
+    background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+}
+
+.metric-card .stat-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.metric-card .stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.risk-item {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border-left: 4px solid;
+}
+
+.risk-item.safe {
+    background-color: #d1e7dd;
+    border-left-color: #198754;
+    color: #0f5132;
+}
+
+.risk-item.warning {
+    background-color: #fff3cd;
+    border-left-color: #ffc107;
+    color: #664d03;
+}
+
+.risk-item.danger {
+    background-color: #f8d7da;
+    border-left-color: #dc3545;
+    color: #721c24;
+}
+
+.risk-item.info {
+    background-color: #cff4fc;
+    border-left-color: #0dcaf0;
+    color: #055160;
+}
+
+.recent-check-item {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border-left: 4px solid #6c757d;
+    background-color: #f8f9fa;
+    font-size: 0.9rem;
+}
+
+.recent-check-item.safe {
+    border-left-color: #198754;
+}
+
+.recent-check-item.warning {
+    border-left-color: #ffc107;
+}
+
+.recent-check-item.danger {
+    border-left-color: #dc3545;
+}
+
+.recent-check-time {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.progress {
+    height: 8px;
+    border-radius: 4px;
+}
+
+/* Loading animation */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.loading-pulse {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .metric-card .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}
